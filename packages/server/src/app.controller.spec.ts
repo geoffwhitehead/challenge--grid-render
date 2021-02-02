@@ -22,7 +22,7 @@ describe("AppController", () => {
   });
 
   describe("appController", () => {
-    it("should correctly parse the houses data", async () => {
+    it("correctly parses the houses data", async () => {
       const data = "60 23 40000\n58 66 30000\n61 62 80000\n61 91 100000";
       const actual = parseHouseData(data);
       const expected = [
@@ -37,7 +37,7 @@ describe("AppController", () => {
       });
     });
 
-    it("should correctly format the houses data", async () => {
+    it("correctly formats the houses data", async () => {
       const data = [
         houseFactory(60, 23, 40000),
         houseFactory(58, 66, 30000),

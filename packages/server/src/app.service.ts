@@ -34,7 +34,7 @@ export class AppService {
   async findAll(): Promise<FormattedResponse> {
     const file = `${__dirname}/assets/data.txt`;
 
-    const data = await fs.readFileSync(file, "utf-8");
+    const data = fs.readFileSync(file, "utf-8");
 
     const parsedData = parseHouseData(data);
 
